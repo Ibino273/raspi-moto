@@ -1,0 +1,21 @@
+{
+  "name": "moto-scraper-v2",
+  "version": "2.0.0",
+  "description": "Scraper moderno per annunci moto su Subito.it",
+  "main": "src/scraper.js",
+  "type": "module",
+  "scripts": {
+    "scrape": "node src/scraper.js",
+    "test": "node src/test.js",
+    "setup": "npm install && npx playwright install chromium"
+  },
+  "keywords": ["scraper", "subito.it", "moto", "raspberry-pi"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "playwright": "^1.40.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  }
+}

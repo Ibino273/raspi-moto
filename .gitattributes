@@ -1,0 +1,26 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Shell scripts
+*.sh text eol=lf
+
+# JavaScript/TypeScript
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+
+# SQL
+*.sql text eol=lf
+
+# Markdown
+*.md text eol=lf
+
+# Config files
+.env* text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# CSS
+*.css text eol=lf
