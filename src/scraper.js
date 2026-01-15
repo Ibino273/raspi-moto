@@ -32,6 +32,7 @@ class MotoScraper {
     
     this.browser = await chromium.launch({
       headless: config.browser.headless,
+      executablePath: '/usr/bin/chromium-browser',
       args: config.browser.args
     });
 
