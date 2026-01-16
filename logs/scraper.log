@@ -2,3 +2,464 @@
 2026-01-15 21:57:44 [INFO]: ✅ Connessione Supabase OK
 2026-01-15 21:57:44 [INFO]: 🚀 Inizializzazione browser...
 2026-01-15 21:57:44 [ERROR]: ❌ Errore fatale: browserType.launch: chromium is not supported on <unknown>
+2026-01-15 22:04:01 [INFO]: ✅ Configurazione validata
+2026-01-15 22:04:02 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:04:02 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:04:18 [INFO]: ✅ Browser inizializzato
+2026-01-15 22:04:24 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-italia/vendita/moto/
+2026-01-15 22:04:40 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('div:nth-of-type(3) a.SmallCard-module_link__hOkzY') to be visible[22m
+
+2026-01-15 22:04:40 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:04:40 [INFO]: ⚠️ Nessun annuncio trovato, stop scraping
+2026-01-15 22:04:40 [INFO]: 
+2026-01-15 22:04:40 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:04:40 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:04:40 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:04:40 [INFO]: ⏱️  Durata: 39 secondi
+2026-01-15 22:04:40 [INFO]: 📄 Pagine scrapate: 1
+2026-01-15 22:04:40 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:04:40 [INFO]: ✅ Annunci processati: 0
+2026-01-15 22:04:40 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:04:40 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 22:04:40 [INFO]: ⏭️  Saltati: 0
+2026-01-15 22:04:40 [INFO]: ❌ Errori: 0
+2026-01-15 22:04:40 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:04:40 [INFO]: 
+2026-01-15 22:04:40 [INFO]: ✅ Scraping completato con successo!
+2026-01-15 22:04:41 [INFO]: 🔒 Browser chiuso
+2026-01-15 22:06:43 [INFO]: ✅ Configurazione validata
+2026-01-15 22:06:44 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:06:44 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:06:47 [ERROR]: ❌ Errore fatale: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /usr/bin/chromium-browser --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --user-data-dir=/tmp/playwright_chromiumdev_profile-stSaNj --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=11078[22m
+[2m  - [pid=11078][err] [11078:11078:0115/220646.834000:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY[22m
+[2m  - [pid=11078][err] [11078:11078:0115/220646.834474:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+[2m  - [pid=11078] <gracefully close start>[22m
+[2m  - [pid=11078] <kill>[22m
+[2m  - [pid=11078] <will force kill>[22m
+[2m  - [pid=11078] <process did exit: exitCode=1, signal=null>[22m
+[2m  - [pid=11078] starting temporary directories cleanup[22m
+[2m  - [pid=11078] finished temporary directories cleanup[22m
+[2m  - [pid=11078] <gracefully close end>[22m
+
+2026-01-15 22:16:29 [INFO]: ✅ Configurazione validata
+2026-01-15 22:16:31 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:16:31 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:16:34 [INFO]: ✅ Browser inizializzato
+2026-01-15 22:16:36 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-italia/vendita/moto/
+2026-01-15 22:16:53 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('div:nth-of-type(3) a.SmallCard-module_link__hOkzY') to be visible[22m
+
+2026-01-15 22:16:53 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:16:53 [INFO]: ⚠️ Nessun annuncio trovato, stop scraping
+2026-01-15 22:16:53 [INFO]: 
+2026-01-15 22:16:53 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:16:53 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:16:53 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:16:53 [INFO]: ⏱️  Durata: 24 secondi
+2026-01-15 22:16:53 [INFO]: 📄 Pagine scrapate: 1
+2026-01-15 22:16:53 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:16:53 [INFO]: ✅ Annunci processati: 0
+2026-01-15 22:16:53 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:16:53 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 22:16:53 [INFO]: ⏭️  Saltati: 0
+2026-01-15 22:16:53 [INFO]: ❌ Errori: 0
+2026-01-15 22:16:53 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:16:53 [INFO]: 
+2026-01-15 22:16:53 [INFO]: ✅ Scraping completato con successo!
+2026-01-15 22:16:54 [INFO]: 🔒 Browser chiuso
+2026-01-15 22:18:19 [INFO]: ✅ Configurazione validata
+2026-01-15 22:18:25 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:18:25 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:18:29 [INFO]: ✅ Browser inizializzato
+2026-01-15 22:18:31 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 22:19:03 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('div:nth-of-type(3) a.SmallCard-module_link__hOkzY') to be visible[22m
+
+2026-01-15 22:19:03 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:19:03 [INFO]: ⚠️ Nessun annuncio trovato, stop scraping
+2026-01-15 22:19:03 [INFO]: 
+2026-01-15 22:19:03 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:19:03 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:19:03 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:19:03 [INFO]: ⏱️  Durata: 44 secondi
+2026-01-15 22:19:03 [INFO]: 📄 Pagine scrapate: 1
+2026-01-15 22:19:03 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:19:03 [INFO]: ✅ Annunci processati: 0
+2026-01-15 22:19:03 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:19:03 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 22:19:03 [INFO]: ⏭️  Saltati: 0
+2026-01-15 22:19:03 [INFO]: ❌ Errori: 0
+2026-01-15 22:19:03 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:19:03 [INFO]: 
+2026-01-15 22:19:03 [INFO]: ✅ Scraping completato con successo!
+2026-01-15 22:19:04 [INFO]: 🔒 Browser chiuso
+2026-01-15 22:33:32 [INFO]: ✅ Configurazione validata
+2026-01-15 22:33:34 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:33:34 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:33:38 [INFO]: ✅ Browser inizializzato
+2026-01-15 22:33:39 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 22:34:05 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[class*="items-grid_link"]') to be visible[22m
+
+2026-01-15 22:34:05 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:34:06 [INFO]: ⚠️ Nessun annuncio trovato, stop scraping
+2026-01-15 22:34:06 [INFO]: 
+2026-01-15 22:34:06 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:34:06 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:34:06 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:34:06 [INFO]: ⏱️  Durata: 33 secondi
+2026-01-15 22:34:06 [INFO]: 📄 Pagine scrapate: 1
+2026-01-15 22:34:06 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:34:06 [INFO]: ✅ Annunci processati: 0
+2026-01-15 22:34:06 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:34:06 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 22:34:06 [INFO]: ⏭️  Saltati: 0
+2026-01-15 22:34:06 [INFO]: ❌ Errori: 0
+2026-01-15 22:34:06 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:34:06 [INFO]: 
+2026-01-15 22:34:06 [INFO]: ✅ Scraping completato con successo!
+2026-01-15 22:34:07 [INFO]: 🔒 Browser chiuso
+2026-01-15 22:37:27 [INFO]: ✅ Configurazione validata
+2026-01-15 22:37:29 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:37:29 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:37:32 [INFO]: ✅ Browser inizializzato
+2026-01-15 22:37:33 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 22:38:03 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href*="/moto/usate/"], a[href*="/moto/nuove/"]') to be visible[22m
+
+2026-01-15 22:38:03 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:38:04 [INFO]: ⚠️ Nessun annuncio trovato, stop scraping
+2026-01-15 22:38:04 [INFO]: 
+2026-01-15 22:38:04 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:38:04 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:38:04 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:38:04 [INFO]: ⏱️  Durata: 36 secondi
+2026-01-15 22:38:04 [INFO]: 📄 Pagine scrapate: 1
+2026-01-15 22:38:04 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:38:04 [INFO]: ✅ Annunci processati: 0
+2026-01-15 22:38:04 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:38:04 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 22:38:04 [INFO]: ⏭️  Saltati: 0
+2026-01-15 22:38:04 [INFO]: ❌ Errori: 0
+2026-01-15 22:38:04 [INFO]: ═══════════════════════════════════════
+2026-01-15 22:38:04 [INFO]: 
+2026-01-15 22:38:04 [INFO]: ✅ Scraping completato con successo!
+2026-01-15 22:38:05 [INFO]: 🔒 Browser chiuso
+2026-01-15 22:40:11 [INFO]: ✅ Configurazione validata
+2026-01-15 22:40:12 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:40:12 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:40:14 [ERROR]: ❌ Errore fatale: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /usr/bin/chromium-browser --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-gpu --user-data-dir=/tmp/playwright_chromiumdev_profile-rECnKD --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=11729[22m
+[2m  - [pid=11729][err] [11729:11729:0115/224014.410736:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY[22m
+[2m  - [pid=11729][err] [11729:11729:0115/224014.411413:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+[2m  - [pid=11729] <gracefully close start>[22m
+[2m  - [pid=11729] <kill>[22m
+[2m  - [pid=11729] <will force kill>[22m
+[2m  - [pid=11729] <process did exit: exitCode=1, signal=null>[22m
+[2m  - [pid=11729] starting temporary directories cleanup[22m
+[2m  - [pid=11729] finished temporary directories cleanup[22m
+[2m  - [pid=11729] <gracefully close end>[22m
+
+2026-01-15 22:50:45 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:50:45 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:50:45 [ERROR]: ❌ Fatale: browserType.launch: chromium is not supported on <unknown>
+2026-01-15 22:55:07 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 22:55:07 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 22:55:11 [INFO]: ✅ Browser inizializzato con User-Agent: Mozilla/5.0 (Windows NT 10.0; ...
+2026-01-15 22:55:12 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 22:56:14 [INFO]: ✅ Cookie: cliccato "Continua senza accettare"
+2026-01-15 22:56:24 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href*="/moto/usate/"], a[href*="/moto/nuove/"]') to be visible[22m
+
+2026-01-15 22:56:24 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 22:56:24 [INFO]: 
+═══════════════════════════════════════
+2026-01-15 22:56:24 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 22:56:24 [INFO]: ⏱️  Durata: 81 secondi
+2026-01-15 22:56:24 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 22:56:24 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 22:56:24 [INFO]: ═══════════════════════════════════════
+
+2026-01-15 22:56:24 [INFO]: ✅ Completato!
+2026-01-15 22:56:25 [INFO]: 🔒 Browser chiuso
+2026-01-15 23:00:34 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:00:34 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:00:43 [INFO]: ✅ Browser inizializzato con User-Agent: Mozilla/5.0 (Windows NT 10.0; ...
+2026-01-15 23:00:47 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 23:01:43 [INFO]: ✅ Cookie: cliccato "Continua senza accettare"
+2026-01-15 23:01:53 [WARN]: ⚠️ Nessun link trovato sulla pagina: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('a[href*="/moto/usate/"], a[href*="/moto/nuove/"]') to be visible[22m
+
+2026-01-15 23:01:53 [INFO]: 🔍 Trovati 0 annunci sulla pagina 1
+2026-01-15 23:01:54 [INFO]: 
+═══════════════════════════════════════
+2026-01-15 23:01:54 [INFO]: 📊 STATISTICHE SCRAPING
+2026-01-15 23:01:54 [INFO]: ⏱️  Durata: 81 secondi
+2026-01-15 23:01:54 [INFO]: 🔍 Annunci trovati: 0
+2026-01-15 23:01:54 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 23:01:54 [INFO]: ═══════════════════════════════════════
+
+2026-01-15 23:01:54 [INFO]: ✅ Completato!
+2026-01-15 23:01:57 [INFO]: 🔒 Browser chiuso
+2026-01-15 23:07:00 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:07:00 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:07:03 [ERROR]: ❌ Fatale: browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+[2m  - <launching> /usr/bin/chromium-browser --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --user-data-dir=/tmp/playwright_chromiumdev_profile-TDIhcb --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=12479[22m
+[2m  - [pid=12479][err] [12479:12479:0115/230703.628560:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:259] Missing X server or $DISPLAY[22m
+[2m  - [pid=12479][err] [12479:12479:0115/230703.629196:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.[22m
+[2m  - [pid=12479] <gracefully close start>[22m
+[2m  - [pid=12479] <kill>[22m
+[2m  - [pid=12479] <will force kill>[22m
+[2m  - [pid=12479] <process did exit: exitCode=1, signal=null>[22m
+[2m  - [pid=12479] starting temporary directories cleanup[22m
+[2m  - [pid=12479] finished temporary directories cleanup[22m
+[2m  - [pid=12479] <gracefully close end>[22m
+
+2026-01-15 23:07:25 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:07:25 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:07:30 [INFO]: ✅ Browser inizializzato con User-Agent: Mozilla/5.0 (Windows NT 10.0; ...
+2026-01-15 23:07:33 [INFO]: 📄 Caricamento pagina 1: https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 23:08:25 [INFO]: ✅ Cookie: cliccato "Continua senza accettare"
+2026-01-15 23:08:33 [INFO]: 🔍 Analisi completata: trovati 33 link validi
+2026-01-15 23:08:33 [INFO]: 🔍 Trovati 33 annunci sulla pagina 1
+2026-01-15 23:16:26 [ERROR]: ❌ Errore dettagli annuncio https://www.subito.it/moto-e-scooter/bmw-r-1300-gs-alessandria-631643706.htm: page.goto: Target page, context or browser has been closed
+Call log:
+[2m  - navigating to "https://www.subito.it/moto-e-scooter/bmw-r-1300-gs-alessandria-631643706.htm", waiting until "domcontentloaded"[22m
+
+2026-01-15 23:23:12 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:23:12 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:23:18 [INFO]: ✅ Browser pronto e persistente
+2026-01-15 23:23:21 [INFO]: 📄 Pagina 1: Caricamento...
+2026-01-15 23:23:21 [INFO]: 📄 Pagina 2: Caricamento...
+2026-01-15 23:23:22 [INFO]: 📄 Pagina 3: Caricamento...
+2026-01-15 23:23:58 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:23:58 [INFO]: 🔍 Pagina 3: Trovati 0 link
+2026-01-15 23:24:08 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:24:08 [INFO]: 🔍 Pagina 1: Trovati 0 link
+2026-01-15 23:24:10 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:24:10 [INFO]: 🔍 Pagina 2: Trovati 0 link
+2026-01-15 23:24:11 [INFO]: 🏁 Batch pagine 1-3 completato
+2026-01-15 23:24:16 [INFO]: 📄 Pagina 5: Caricamento...
+2026-01-15 23:24:16 [INFO]: 📄 Pagina 4: Caricamento...
+2026-01-15 23:24:46 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:24:46 [INFO]: 🔍 Pagina 5: Trovati 0 link
+2026-01-15 23:24:47 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:24:47 [INFO]: 🔍 Pagina 4: Trovati 0 link
+2026-01-15 23:24:47 [INFO]: 🏁 Batch pagine 4-6 completato
+2026-01-15 23:24:51 [INFO]: 
+════════════════════════════════════════
+2026-01-15 23:24:51 [INFO]: 📊 STATISTICHE FINALI
+2026-01-15 23:24:51 [INFO]: ⏱️  Durata: 100s
+2026-01-15 23:24:51 [INFO]: 🔍 Trovati: 0
+2026-01-15 23:24:51 [INFO]: ➕ Nuovi: 0
+2026-01-15 23:24:51 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 23:24:51 [INFO]: ════════════════════════════════════════
+
+2026-01-15 23:24:51 [INFO]: 🎉 Scraping terminato con successo!
+2026-01-15 23:24:52 [INFO]: 🔒 Browser chiuso correttamente
+2026-01-15 23:27:15 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:27:15 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:27:22 [INFO]: 🍪 Gestione Cookie iniziale...
+2026-01-15 23:27:40 [INFO]: ✅ Cookie accettati e memorizzati nel contesto
+2026-01-15 23:27:42 [INFO]: 📄 Pagina 1: Avvio...
+2026-01-15 23:27:42 [INFO]: 📄 Pagina 2: Avvio...
+2026-01-15 23:28:10 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:28:10 [INFO]: 🔍 Pagina 1: Trovati 0 link
+2026-01-15 23:28:11 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:28:11 [INFO]: 🔍 Pagina 2: Trovati 0 link
+2026-01-15 23:28:16 [INFO]: 📄 Pagina 3: Avvio...
+2026-01-15 23:28:16 [INFO]: 📄 Pagina 4: Avvio...
+2026-01-15 23:28:45 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:28:45 [INFO]: 🔍 Pagina 3: Trovati 0 link
+2026-01-15 23:28:45 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:28:45 [INFO]: 🔍 Pagina 4: Trovati 0 link
+2026-01-15 23:28:52 [INFO]: 📄 Pagina 5: Avvio...
+2026-01-15 23:29:16 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+[2m    - locator resolved to 33 elements. Proceeding with the first one: <a class="index-module_link__VX8dl" aria-label="Piaggio Vespa 300 GTS - 2016" href="https://www.subito.it/moto-e-scooter/piaggio-vespa-300-gts-2016-torino-631611448.htm"></a>[22m
+
+2026-01-15 23:29:16 [INFO]: 🔍 Pagina 5: Trovati 0 link
+2026-01-15 23:29:21 [INFO]: 🎉 Fine!
+2026-01-15 23:32:29 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:32:29 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:32:37 [INFO]: 🍪 Caricamento pagina iniziale e gestione cookie...
+2026-01-15 23:32:51 [INFO]: ✅ Setup iniziale completato. Pagina Madre pronta.
+2026-01-15 23:32:51 [INFO]: 📄 Navigazione Pagina Madre -> https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 23:33:15 [INFO]: 🔍 Trovati 32 annunci nella pagina 1
+2026-01-15 23:33:15 [INFO]: 📦 Elaborazione batch annunci 1-3...
+2026-01-15 23:34:54 [INFO]: ✅ Nuovo annuncio inserito: null null (1)
+2026-01-15 23:34:54 [INFO]: ✅ Nuovo annuncio inserito: null null (2)
+2026-01-15 23:34:55 [INFO]: ✅ Nuovo annuncio inserito: null null (3)
+2026-01-15 23:34:57 [INFO]: 📦 Elaborazione batch annunci 4-6...
+2026-01-15 23:35:53 [INFO]: ✅ Nuovo annuncio inserito: null null (4)
+2026-01-15 23:35:54 [INFO]: ✅ Nuovo annuncio inserito: null null (5)
+2026-01-15 23:35:54 [INFO]: ✅ Nuovo annuncio inserito: null null (6)
+2026-01-15 23:35:56 [INFO]: 📦 Elaborazione batch annunci 7-9...
+2026-01-15 23:41:45 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:41:45 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:42:00 [INFO]: 🍪 Caricamento pagina iniziale e gestione cookie...
+2026-01-15 23:42:14 [INFO]: 🍪 Tentativo rimozione cookie...
+2026-01-15 23:42:40 [INFO]: ✅ Cookie: cliccato span.didomi-continue-without-agreeing
+2026-01-15 23:42:43 [INFO]: ✅ Setup iniziale completato. Pagina Madre pronta.
+2026-01-15 23:42:43 [INFO]: 📄 Navigazione Pagina Madre -> https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 23:43:11 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+
+2026-01-15 23:43:11 [INFO]: 🔍 Trovati 0 annunci nella pagina 1
+2026-01-15 23:43:11 [INFO]: ✅ Pagina 1 completata.
+2026-01-15 23:43:16 [INFO]: 📄 Navigazione Pagina Madre -> https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/?o=2
+2026-01-15 23:43:42 [WARN]: ⚠️ Errore estrazione link: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a[class*="index-module_link"]') to be visible[22m
+[2m    - locator resolved to 33 elements. Proceeding with the first one: <a aria-label="Vendita moto" class="index-module_link__VX8dl" href="https://www.subito.it/moto-e-scooter/vendita-moto-cuneo-631635674.htm"></a>[22m
+
+2026-01-15 23:43:42 [INFO]: 🔍 Trovati 0 annunci nella pagina 2
+2026-01-15 23:43:42 [INFO]: ✅ Pagina 2 completata.
+2026-01-15 23:43:48 [INFO]: 📄 Navigazione Pagina Madre -> https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/?o=3
+2026-01-15 23:43:50 [ERROR]: ❌ Errore durante l'esecuzione: page.goto: net::ERR_ABORTED at https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/?o=3
+Call log:
+[2m  - navigating to "https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/?o=3", waiting until "domcontentloaded"[22m
+
+2026-01-15 23:43:50 [INFO]: 
+════════════════════════════════════════
+2026-01-15 23:43:50 [INFO]: 📊 SCRAPING COMPLETATO IN 126s
+2026-01-15 23:43:50 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 23:43:50 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 23:43:50 [INFO]: ════════════════════════════════════════
+2026-01-15 23:45:40 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:45:40 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:45:44 [ERROR]: ❌ Errore durante l'esecuzione: browser.newContext: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /usr/bin/chromium-browser --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --no-sandbox --no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-blink-features=AutomationControlled --user-data-dir=/tmp/playwright_chromiumdev_profile-wA3ghU --remote-debugging-pipe --no-startup-window
+<launched> pid=15060
+[pid=15060] <gracefully close start>
+2026-01-15 23:45:44 [INFO]: 
+════════════════════════════════════════
+2026-01-15 23:45:44 [INFO]: 📊 SCRAPING COMPLETATO IN 6s
+2026-01-15 23:45:44 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 23:45:44 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 23:45:44 [INFO]: ════════════════════════════════════════
+2026-01-15 23:48:52 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:48:52 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:49:00 [INFO]: 🍪 Caricamento pagina iniziale e gestione cookie...
+2026-01-15 23:49:41 [INFO]: ✅ Cookie: Cliccato "Continua senza accettare"
+2026-01-15 23:49:44 [INFO]: ✅ Setup iniziale completato. Pagina Madre pronta.
+2026-01-15 23:49:44 [INFO]: 📄 Navigazione Pagina Madre -> https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/
+2026-01-15 23:50:06 [WARN]: ⚠️ Errore selettore principale: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('article[class*="index-module_card"] a')[22m
+. Uso fallback...
+2026-01-15 23:50:14 [INFO]: 🔍 Trovati 34 annunci nella pagina 1
+2026-01-15 23:50:14 [INFO]: 📦 Elaborazione batch annunci 1-3...
+2026-01-15 23:52:15 [INFO]: ✅ Nuovo annuncio inserito: null null (7)
+2026-01-15 23:52:16 [INFO]: ✅ Nuovo annuncio inserito: null null (8)
+2026-01-15 23:52:16 [INFO]: ✅ Nuovo annuncio inserito: null null (9)
+2026-01-15 23:52:19 [INFO]: 📦 Elaborazione batch annunci 4-6...
+2026-01-15 23:53:17 [INFO]: ✅ Nuovo annuncio inserito: null null (10)
+2026-01-15 23:53:18 [INFO]: ✅ Nuovo annuncio inserito: null null (11)
+2026-01-15 23:53:18 [INFO]: ✅ Nuovo annuncio inserito: null null (12)
+2026-01-15 23:53:20 [INFO]: 📦 Elaborazione batch annunci 7-9...
+2026-01-15 23:54:20 [INFO]: ✅ Nuovo annuncio inserito: null null (13)
+2026-01-15 23:54:20 [INFO]: ✅ Nuovo annuncio inserito: null null (14)
+2026-01-15 23:54:20 [INFO]: ✅ Nuovo annuncio inserito: null null (15)
+2026-01-15 23:54:23 [INFO]: 📦 Elaborazione batch annunci 10-12...
+2026-01-15 23:54:56 [INFO]: ✅ Nuovo annuncio inserito: null null (16)
+2026-01-15 23:54:57 [INFO]: ✅ Nuovo annuncio inserito: null null (17)
+2026-01-15 23:54:57 [INFO]: ✅ Nuovo annuncio inserito: null null (18)
+2026-01-15 23:54:59 [INFO]: 📦 Elaborazione batch annunci 13-15...
+2026-01-15 23:54:59 [ERROR]: ❌ Errore durante l'esecuzione: browserContext.newPage: Target page, context or browser has been closed
+2026-01-15 23:54:59 [INFO]: 
+════════════════════════════════════════
+2026-01-15 23:54:59 [INFO]: 📊 SCRAPING COMPLETATO IN 369s
+2026-01-15 23:54:59 [INFO]: ➕ Nuovi inseriti: 12
+2026-01-15 23:54:59 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 23:54:59 [INFO]: ════════════════════════════════════════
+2026-01-15 23:55:41 [INFO]: ✅ Connessione Supabase OK
+2026-01-15 23:55:41 [INFO]: 🚀 Inizializzazione browser...
+2026-01-15 23:55:51 [INFO]: 🍪 Caricamento pagina iniziale e gestione cookie...
+2026-01-15 23:56:21 [ERROR]: ❌ Errore durante l'esecuzione: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/", waiting until "networkidle"[22m
+
+2026-01-15 23:56:21 [INFO]: 
+════════════════════════════════════════
+2026-01-15 23:56:21 [INFO]: 📊 SCRAPING COMPLETATO IN 41s
+2026-01-15 23:56:21 [INFO]: ➕ Nuovi inseriti: 0
+2026-01-15 23:56:21 [INFO]: ✏️  Aggiornati: 0
+2026-01-15 23:56:21 [INFO]: ════════════════════════════════════════
+2026-01-16 00:11:21 [INFO]: ✅ Connessione Supabase OK
+2026-01-16 00:11:47 [INFO]: 📄 Pagina 1
+2026-01-16 00:13:25 [ERROR]: ❌ Errore salvataggio: Could not find the table 'public.annunci_moto' in the schema cache
+2026-01-16 00:13:25 [INFO]: ✅ Inserito: undefined
+2026-01-16 00:13:25 [INFO]: ✅ Inserito: undefined
+2026-01-16 00:13:25 [INFO]: ✅ Inserito: undefined
+2026-01-16 00:13:40 [ERROR]: browserContext.newPage: Protocol error (Target.createTarget): Failed to open a new tab
