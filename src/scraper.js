@@ -30,114 +30,135 @@ const userAgents = [
 
 const getRandomDelay = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-/**
- * Gestione Banner Cookie
- */
+function parseSubitoDate(input) {
+  const months = {
+    gen: '01', feb: '02', mar: '03', apr: '04', mag: '05', giu: '06',
+    lug: '07', ago: '08', set: '09', ott: '10', nov: '11', dic: '12'
+  };
+  const now = new Date();
+  if (!input) return null;
+
+  if (input.toLowerCase().includes('oggi')) {
+    const hourMatch = input.match(/(\d{2}:\d{2})/);
+    if (!hourMatch) return now.toISOString();
+    const [h, m] = hourMatch[1].split(':');
+    now.setHours(parseInt(h), parseInt(m), 0, 0);
+    return now.toISOString();
+  }
+
+  if (input.toLowerCase().includes('ieri')) {
+    const hourMatch = input.match(/(\d{2}:\d{2})/);
+    now.setDate(now.getDate() - 1);
+    if (!hourMatch) return now.toISOString();
+    const [h, m] = hourMatch[1].split(':');
+    now.setHours(parseInt(h), parseInt(m), 0, 0);
+    return now.toISOString();
+  }
+
+  const match = input.match(/(\d{1,2}) (\w{3}) (?:all'|alle) (\d{2}:\d{2})/);
+  if (!match) return null;
+  const [_, day, monthAbbr, time] = match;
+  const month = months[monthAbbr];
+  if (!month) return null;
+  return `${now.getFullYear()}-${month}-${day.padStart(2, '0')}T${time}:00`;
+}
+
 async function handleCookieBanner(page) {
   try {
-    // Selettore comune per Didomi (usato da Subito)
     const cookieButton = page.locator('#didomi-notice-agree-button');
-    if (await cookieButton.isVisible({ timeout: 5000 })) {
+    if (await cookieButton.isVisible({ timeout: 3000 })) {
       await cookieButton.click();
-      logger.info("🍪 Banner cookie accettato.");
-      // Aspetta un secondo che il banner scompaia graficamente
+      logger.info("🍪 Cookie accettati.");
       await page.waitForTimeout(1000);
     }
-  } catch (err) {
-    // Spesso il banner non appare se i cookie sono già salvati nel contesto
-    logger.info("ℹ️ Banner cookie non visualizzato.");
-  }
+  } catch (err) { }
 }
 
 async function runScraper() {
   let browser;
   const BASE_URL = config?.scraping?.baseUrl || 'https://www.subito.it/annunci-piemonte/vendita/moto-e-scooter/';
-  const MAX_PAGES = 5;
-  const MAX_LISTINGS = 50;
-
-  let pageNumber = 1;
-  let totalScraped = 0;
+  const MAX_PAGES = config?.scraping?.maxPages || 3;
 
   try {
-    logger.info("🚀 Avvio browser Chromium...");
+    logger.info("🚀 Avvio scraper...");
     browser = await chromium.launch({
-      headless: false, // Impostato a false per monitorare sulla Raspberry
+      headless: false,
       executablePath: '/usr/bin/chromium-browser',
-      args: [
-        '--start-maximized',
-        '--force-device-scale-factor=0.8' // Zoom all'80%
-      ]
+      args: ['--start-maximized', '--force-device-scale-factor=0.8']
     });
 
     const context = await browser.newContext({
-      viewport: { width: 1280, height: 800 },
-      userAgent: userAgents[Math.floor(Math.random() * userAgents.length)]
+      viewport: { width: 1920, height: 1080 },
+      userAgent: userAgents[0]
     });
 
     const page = await context.newPage();
 
-    while (pageNumber <= MAX_PAGES && totalScraped < MAX_LISTINGS) {
-      const url = pageNumber === 1 ? BASE_URL : `${BASE_URL}?o=${pageNumber}`;
-      logger.info(`🌐 Navigazione: ${url}`);
+    for (let pageNum = 1; pageNum <= MAX_PAGES; pageNum++) {
+      const url = pageNum === 1 ? BASE_URL : `${BASE_URL}?o=${pageNum}`;
+      logger.info(`🌐 Pagina ${pageNum}: ${url}`);
 
       await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-
-      // Gestione cookie solo sulla prima pagina o se appare
       await handleCookieBanner(page);
 
-      // Estrazione link annunci
       const links = await page.$$eval('article a', els => 
         els.map(el => el.href).filter(href => href.includes('.htm'))
       );
-      
       const uniqueLinks = [...new Set(links)];
-      logger.info(`Found ${uniqueLinks.length} annunci nella pagina ${pageNumber}`);
 
       for (const link of uniqueLinks) {
-        if (totalScraped >= MAX_LISTINGS) break;
-
         const detailPage = await context.newPage();
         try {
           await detailPage.goto(link, { waitUntil: 'domcontentloaded', timeout: 60000 });
           
-          // Chiudi eventuali popup sovrapposti se necessario
-          await handleCookieBanner(detailPage);
+          const title = await detailPage.locator('h1').innerText().catch(() => '');
+          const priceText = await detailPage.locator('p[class*="index-module_price"]').first().innerText().catch(() => '');
+          const desc = await detailPage.locator('p[class*="AdDescription_description"]').innerText().catch(() => '');
+          const dateText = await detailPage.locator('span[class*="index-module_insertion-date"]').innerText().catch(() => '');
+          const loc = await detailPage.locator('p[class*="AdInfo_location"]').innerText().catch(() => '');
 
-          const title = await detailPage.locator('h1').innerText().catch(() => null);
-          const priceText = await detailPage.locator('p[class*="index-module_price"]').first().innerText().catch(() => null);
-          const location = await detailPage.locator('p[class*="AdInfo_location"]').innerText().catch(() => null);
-
-          if (title) {
-            const price = priceText ? parseFloat(priceText.replace(/[^0-9]/g, '')) : null;
-            
-            const { error } = await supabase.from('moto_listings').upsert({
-              titolo: title,
-              prezzo: price,
-              comune: location,
-              link_annuncio: link,
-              created_at: new Date().toISOString()
-            }, { onConflict: 'link_annuncio' });
-
-            if (error) logger.error(`❌ Errore Database: ${error.message}`);
-            else logger.info(`✅ Salvato: ${title.substring(0, 30)}...`);
-            
-            totalScraped++;
+          // Estrazione caratteristiche tecniche
+          const features = {};
+          const items = await detailPage.locator('li[class*="feature-list_feature"]').all();
+          for (const item of items) {
+            const label = await item.locator('span').first().innerText().catch(() => '');
+            const value = await item.locator('span.feature-list_value__SZDpz').innerText().catch(() => '');
+            if (label && value) features[label.toLowerCase().replace(/\s/g, '')] = value;
           }
+
+          const record = {
+            titolo: title,
+            descrizione: desc,
+            prezzo: priceText ? parseFloat(priceText.replace(/[^0-9]/g, '')) : null,
+            citta: loc, // Aggiornato da 'comune' a 'citta' per corrispondere allo schema Supabase
+            marca: features.marca || null,
+            modello: features.modello || null,
+            cilindrata: features.cilindrata ? parseInt(features.cilindrata.replace(/\D/g, '')) : null,
+            km: features.km ? parseInt(features.km.replace(/\D/g, '')) : null,
+            anno: features.immatricolazione ? parseInt(features.immatricolazione.replace(/\D/g, '')) : null,
+            link_annuncio: link,
+            data_pubblicazione: parseSubitoDate(dateText),
+            created_at: new Date().toISOString()
+          };
+
+          const { error } = await supabase.from('moto_listings').upsert(record, { onConflict: 'link_annuncio' });
+
+          if (error) {
+             logger.error(`❌ Errore DB: ${error.message}`);
+          } else {
+             logger.info(`✅ Salvato: ${title.substring(0, 25)}...`);
+          }
+
         } catch (err) {
-          logger.error(`⚠️ Errore durante lo scraping del link ${link}: ${err.message}`);
+          logger.error(`⚠️ Errore link: ${err.message}`);
         } finally {
           await detailPage.close();
         }
-
-        await page.waitForTimeout(getRandomDelay(1500, 3000));
+        await page.waitForTimeout(getRandomDelay(1000, 2000));
       }
-      pageNumber++;
     }
-
-    logger.info(`✨ Scraping completato. Totale annunci: ${totalScraped}`);
-
   } catch (err) {
-    logger.error(`❌ Errore Critico: ${err.message}`);
+    logger.error(`❌ Critico: ${err.message}`);
   } finally {
     if (browser) await browser.close();
   }
